@@ -1,0 +1,5 @@
+export const MUTYPE = {
+  SET_MOVIE: 'SET_MOVIE',
+  SET_TVSHOW: 'SET_TVSHOW',
+  IS_LOADING: 'IS_LOADING'
+}

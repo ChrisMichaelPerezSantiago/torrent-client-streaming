@@ -3,7 +3,7 @@ module.exports = function (config) {
   config.set({
     browsers: ['PhantomJS'],
     frameworks: ['browserify', 'jasmine'],
-    files: ['test/unit/**/*.js'],
+    files: ['test/unit/**/*.js' , 'js/*.js', 'css/*.css'],
     reporters: ['spec'],
     preprocessors: {
       'test/unit/**/*.js': ['browserify']
@@ -15,6 +15,6 @@ module.exports = function (config) {
     },
     // if you want to continuously re-run tests on file-save,
     // replace the following line with `autoWatch: true`
-    singleRun: true
+    singleRun: true,
   })
 }
