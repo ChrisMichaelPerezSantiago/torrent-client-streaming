@@ -8,15 +8,27 @@
       <h3>Log</h3>
       <div class="speed"></div>
       <div class="log"></div>
+
+      <pre>{{movies}}</pre>
+
   </div>
 </template>
 
 <script>
+  import {mapState} from 'vuex';
+  import store from '../store/index'
+
   export default {
     name: 'home',
-    data () {
-      return {
+    data(){
+      return{
       }
+    },
+    computed:{
+      ...mapState(['movies'])
+    },
+    created(){
+      store.dispatch('getMovies');
     },
     mounted() {
       require('../streaming/index.js');

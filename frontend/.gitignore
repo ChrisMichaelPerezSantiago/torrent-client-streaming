@@ -11,3 +11,6 @@ npm-debug.log
 *.ntvs*
 *.njsproj
 *.sln
+
+#Electron-builder output
+/dist_electron

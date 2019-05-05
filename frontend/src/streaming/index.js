@@ -6,11 +6,21 @@ const prettierBytes = require('prettier-bytes');
 const throttle = require('throttleit');
 const util = require('./util');
 const downloadAs = require('./zip');
+var MediaElementWrapper = require('mediasource');
 const client = new WebTorrent();
 
 localStorage.debug = '*';
 
 //const FAKE = ['b560a21ebfead8f6feb54706f41f459f819c0ae5'];
+
+function createElem (tagName) {
+  var elem = document.createElement(tagName)
+  elem.controls = true
+  elem.autoplay = true // for chrome
+  elem.play() // for firefox
+  document.body.appendChild(elem)
+  return elem
+}
 
 client.on('error', util.warning);
 
@@ -70,12 +80,18 @@ function onTorrent(torrent){
   setInterval(updateSpeed, 5000)
   updateSpeed()
   
+   // Render all files into to the page
+   torrent.files.forEach(function (file) {
+    file.appendTo('.log')
+  })
 
-  var file = torrent.files.find(function (file){
-    return file.name.endsWith('.mp4')
-  });
+
+  //var file = torrent.files.find(function (file){
+  //  return file.name.endsWith('.mp4')
+  //});
+  //
+  //file.appendTo('.log');
   
-  file.appendTo('.log');
 }
 
 function updateSpeed(){
