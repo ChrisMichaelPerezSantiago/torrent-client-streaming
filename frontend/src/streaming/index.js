@@ -38,6 +38,14 @@ function init(){
   });
 }
 
+//wss://tracker.openwebtorrent.com
+//
+//wss://tracker.btorrent.xyz
+//
+//wss://tracker.fastcast.nz
+//
+//wss://tracker.sloppyta.co
+
 
 //onHashChange()
 //window.addEventListener('hashchange', onHashChange)
