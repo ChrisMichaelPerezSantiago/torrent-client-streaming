@@ -22,6 +22,7 @@
   "dependencies": {
     "@vue/cli-service": "^3.6.0",
     "axios": "^0.18.0",
+    "buefy": "^0.7.5",
     "drag-drop": "^4.2.0",
     "jquery": "^3.4.1",
     "jszip": "^3.2.1",
@@ -32,7 +33,6 @@
     "throttleit": "^1.0.0",
     "vue": "^2.0.1",
     "vue-router": "^3.0.6",
-    "vuejs-paginate": "^2.1.0",
     "vuex": "^3.1.0",
     "webtorrent": "^0.103.1"
   },

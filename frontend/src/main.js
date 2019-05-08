@@ -2,11 +2,12 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import store from './store/index';
-import Paginate from 'vuejs-paginate';
+import Buefy from 'buefy'
 
 Vue.config.productionTip = false;
 
-Vue.component('paginate' , Paginate);
+
+Vue.use(Buefy)
 
 new Vue({
   router,
