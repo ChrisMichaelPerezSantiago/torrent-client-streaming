@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@vue/cli-service": "^3.6.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "buefy": "^0.7.5",
     "drag-drop": "^4.2.0",
     "jquery": "^3.4.1",
