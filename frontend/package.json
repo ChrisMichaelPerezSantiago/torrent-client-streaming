@@ -27,7 +27,7 @@
     "jquery": "^3.4.1",
     "jszip": "^3.2.1",
     "mediasource": "^2.3.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "port": "^0.8.1",
     "prettier-bytes": "^1.0.4",
     "throttleit": "^1.0.0",
