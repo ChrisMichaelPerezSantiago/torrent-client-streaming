@@ -21,7 +21,7 @@
     "drag-drop": "^4.2.0",
     "express": "^4.16.4",
     "jest": "^24.7.1",
-    "jszip": "^3.2.1",
+    "jszip": "^3.7.0",
     "moment": "^2.24.0",
     "nodemon": "^1.18.11",
     "prettier-bytes": "^1.0.4",
